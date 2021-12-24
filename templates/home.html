@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FACES</title>
+        <style>
+            :root {
+                --background-color: #ffe5e5;
+                --color: #000000;
+                --feedback-bg-color: #ffffff;
+                --feedback-secondary-color: #ffacac;
+                --feedback-primary-color: #53488d;
+                --feedback-icon-color: #ffffff;
+                --feedback-form-input: #f4f4f4;
+            }
+            
+            body {
+              font-family: "DM Sans", sans-serif;
+                background-color: var(--feedback-primary-color);
+            }
+            
+            .center-content {
+              display: grid;
+              place-content: center;
+            }
+            
+            .container {
+              @extend .center-content;
+                height: 100vh;
+            }
+            
+            .submit-feedback {
+                @extend .center-content;
+                padding: 10px 30px;
+                margin: 40%;
+              font-size: 24px;
+              cursor: pointer;
+              
+                border-radius: 7px;
+                border-bottom-left-radius: 0;
+              
+                background-color: var(--feedback-secondary-color);
+                color: var(--feedback-primary-color);
+              
+                transition: all 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="container" action="result">
+            <input class="submit-feedback Submit" type="submit" value="Open the webcam"> 
+        </form>
+    </body>
+</html>
