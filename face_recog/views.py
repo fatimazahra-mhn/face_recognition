@@ -12,7 +12,7 @@ import numpy as np
 def home(request):
     return render(request,"home.html")
 def result(request):
-    KNOWN_FACES_DIR = "C:\\Users\\hp\\Desktop\\py project\\known_faces"
+    KNOWN_FACES_DIR = "known_faces"
     known_faces = []
     known_names = []
     TOLERANCE = 0.6
