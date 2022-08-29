@@ -2,7 +2,7 @@
 """
 Created on Mon Dec 20 20:24:22 2021
 
-@author: hp
+@author: Fatima-zahra MHANNI
 """
 from django.shortcuts import render ;
 import cv2
